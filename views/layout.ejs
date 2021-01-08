@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Llibre RMN</title>
+
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+    <link rel='stylesheet' href='/stylesheets/menu.css' />
+    <link rel="stylesheet" type="text/css" href="/javascripts/jquery-ui-1.11.4/jquery-ui.css">
+
+    <script src="/javascripts/jquery-2.1.4.min.js"></script>
+    <script src="/javascripts/jquery-ui-1.11.4/jquery-ui.min.js"></script>
+</head>
+<body>
+	<div id="contenidor" class="ui-widget">
+
+		<% if (session.user){ %>   
+		
+			<header id="header" class="">
+				<h2>Asepeyo - Hospital de Sant Cugat <br>Llibres de Ressonància i TAC</h2>
+				<ul id="menu-bar">
+					<!-- <li><a href="/" title="">Inici</a></li> -->
+					<li id="menuLlibre" class="active"><a href="/activitat">Llibre</a></li>
+					<li id="menuResultats"><a href="/resultats">Resultats</a></li>
+					<li id="menuLogout"><a href="/logout" title="usuari: <%= session.user.username%>">[Tancar sessio]</a></li>
+				</ul>
+			</header><!-- /header -->
+		<% } %>
+
+		<nav>
+		</nav>
+
+
+
+
+		<section>
+			<%- body %>
+		</section>
+
+
+
+		<footer>
+			
+		</footer>
+	
+
+	</div>
+</body>
+</html>

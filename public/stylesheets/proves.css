@@ -1,0 +1,71 @@
+
+
+
+/*  colors icones jquery ui */
+
+.ui-icon.red { background-image: url(../javascripts/jquery-ui-1.11.4/images/ui-icons_8c291d_256x240.png); }
+.ui-icon.green { background-image: url(../javascripts/jquery-ui-1.11.4/images/ui-icons-green.png); }
+
+
+
+
+
+/* TAULA introduccio registre prova*/
+
+#taulaAfegirRegistreProva{
+	text-align: center;
+	table-layout: fixed;
+	margin-top: 5px;
+	width: 80%;
+	margin: 10px auto 0px auto;
+}
+
+
+#taulaAfegirRegistreProva th:nth-child(1) {		/* prova */
+	width: 27%;
+}
+
+#taulaAfegirRegistreProva th:nth-child(2) {		/* boto validar */
+	width: 3%;
+}
+
+#taulaAfegirRegistreProva td:nth-child(2) {		/* boto validar */
+	text-align: center;
+}
+
+
+#taulaAfegirRegistreProva input {
+	/*width: 95%;*/
+	background-color: #ffe066;
+	width: 95%;
+}
+
+
+
+
+
+/* TAULA llistat registres PROVES*/
+
+#taula_registresPROVES{
+	margin: 20px auto 0px auto;
+	width: 80%;
+
+}
+
+  
+#taula_registresPROVES th:nth-child(1), {	/* nom */
+	width: 27%;
+}
+
+
+#taula_registresPROVES th:last-child {   	/* boto eliminar */
+	width: 3%;
+}
+/* numero
+#taula_registresPROVES td:first-child {   	
+	text-align: center;
+}
+*/
+#taula_registresPROVES td:last-child {   	/* boto eliminar */
+	text-align: center;
+}

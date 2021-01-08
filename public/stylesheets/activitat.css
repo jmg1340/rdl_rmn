@@ -1,0 +1,180 @@
+
+
+
+/*  colors icones jquery ui */
+
+.ui-icon.red { background-image: url(../javascripts/jquery-ui-1.11.4/images/ui-icons_8c291d_256x240.png); }
+.ui-icon.green { background-image: url(../javascripts/jquery-ui-1.11.4/images/ui-icons-green.png); }
+
+.ui-dialog{
+	background-color: #d9d9d9 !important;;
+}
+
+/* TAULA introduccio registre activitat*/
+
+#taulaAfegirRegistreActivitat{
+	table-layout: fixed;
+	margin-top: 25px;
+	margin-bottom: 40px;
+	width: 100%;
+}
+
+#taulaAfegirRegistreActivitat th:nth-child(1){   	/* Procedencia */
+	width: 6%;
+}
+
+#taulaAfegirRegistreActivitat th:nth-child(2) {	/* Pacient */
+	width: 10%;
+}
+
+#taulaAfegirRegistreActivitat th:nth-child(3) {	/* Proces */
+	width: 7%;
+}
+
+#taulaAfegirRegistreActivitat th:nth-child(4) {	/* Prova */
+	width: 10%;
+}
+
+#taulaAfegirRegistreActivitat th:nth-child(5) {	/* RMN */
+	width: 8%;
+}
+
+#taulaAfegirRegistreActivitat th:nth-child(6) {	/* contrast */
+	width: 3%;
+}
+
+#taulaAfegirRegistreActivitat th:nth-child(7) {	/* Realitzador */
+	width: 10%;
+}
+
+#taulaAfegirRegistreActivitat th:last-child {   	/* boto validar*/
+	width: 3%;
+}
+
+#taulaAfegirRegistreActivitat td:last-child {   	/* boto validar*/
+	text-align: center;
+}
+
+#taulaAfegirRegistreActivitat th{
+	padding: 5px 0px 5px 0px;
+}
+
+.plus{
+	display:inline;
+	float:right;
+}
+
+.plus a{
+	font-style: bold;
+	color: green;
+}
+
+
+#taulaAfegirRegistreActivitat input, select{
+	/*width: 95%;*/
+	background-color: #ffe066;
+	width: 95%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+#filtre{
+	display: inline;
+	margin-bottom: 20px;
+}
+
+#filtreData{
+	display: inline;
+	float: left;
+
+}
+
+#seleccioData{
+	width: 75px;
+	text-align: center;
+	background-color: #6f6;
+}
+
+#filtreModalitat{
+	display: inline;
+	margin-left: 20px;
+}
+
+#modalitatSeleccionada{
+	width: 110px;
+	text-align: left;
+	background-color: #6f6;
+}
+
+
+
+
+
+
+
+
+
+
+/* TAULA mostrar registres activitat*/
+
+#taula_registresLLibre{
+	margin-top: 10px;
+	width: 100%;
+}
+
+#taula_registresLLibre td:first-child {   	/* data */
+	width: 8%;
+	text-align: center;
+}
+
+#taula_registresLLibre td:nth-child(2), th:nth-child(2) {	/* Procedencia */
+	width: 10%;
+}
+
+#taula_registresLLibre td:nth-child(3), th:nth-child(3) {	/* Pacient */
+	width: 20%;
+}
+
+#taula_registresLLibre td:nth-child(4), th:nth-child(4) {	/* Proces */
+	width: 10%;
+}
+
+#taula_registresLLibre td:nth-child(5), th:nth-child(5) {	/* Prova */
+	width: 20%;
+}
+
+#taula_registresLLibre td:nth-child(6), th:nth-child(6) {	/* RMN */
+	width: 12%;
+	text-align: center;
+}
+
+#taula_registresLLibre td:nth-child(7), th:nth-child(7) {	/* Contrast */
+	width: 2%;
+	text-align: center;
+}
+
+#taula_registresLLibre td:nth-child(7), th:nth-child(8) {	/* Realitzador */
+	width: 10%;
+}
+
+#taula_registresLLibre td:last-child {   	/* boto eliminar */
+	width: 5%;
+	text-align: center;
+}
+
+
+
+
+
+#total{
+	margin-top: 20px;
+}

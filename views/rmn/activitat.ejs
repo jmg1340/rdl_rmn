@@ -1,0 +1,245 @@
+
+<!-- javascripts propis de la pagina-->
+<script src="/javascripts/activitat.js"></script>
+
+
+<!-- estils propis de la pagina-->
+<link rel='stylesheet' href='/stylesheets/activitat.css' />
+
+
+<!--Formulari per introduir NOU registre -->
+
+<table id="taulaAfegirRegistreActivitat">
+<caption>Nova prova</caption>
+<thead>
+  <tr>
+    <th>Procedencia</th>
+    <th>Pacient</th>
+    <th>Proces</th>
+    <!-- <th>Prova<div class="plus"><a href="/proves" class="ui-icon ui-icon-plus green">+</a></div></th> -->
+    <th>Prova<div class="plus"><a id="proves" class="ui-icon ui-icon-plus green">+</a></div></th>
+    <th>Modalitat</th>
+    <th>Contrast</th> 
+    <!-- <th>Realitzador<div class="plus"><a href="/tecnics" id="paginaTecnics" class="ui-icon ui-icon-plus green"></a></div></th> -->
+    <th>Realitzador<div class="plus"><a id="tecnics" class="ui-icon ui-icon-plus green"></a></div></th>
+    <th></th>
+  </tr>
+</thead>
+  <tbody>
+    <tr>
+      <form id="formulariAfegirActivitat" autocomplete="off">     <!-- action="/activitatRMN/afegir" method="post" -->
+      <td><input type="text" id="procedencia"></td>       
+      <td><input type="text" id="pacient"  /></td>        
+      <td><input type="text" id="proces" /></td>          
+      <!-- <td><input type="text" id="prova" /></td>  -->          
+      <td>
+        <select id="prova">      
+        </select>
+      </td>
+      <td>
+        <select id="modalitat">      
+          <option value=""></option>
+          <option value="TAC">TAC</option>
+          <option value="RMN oberta">RMN oberta</option>
+          <option value="RMN tancada">RMN tancada</option>
+        </select>
+      </td>
+      <td>
+        <select id="contrast">     
+          <option value="Si">Si</option>
+          <option value="No">No</option>
+        </select>
+      </td>
+      <td>
+        <select id="realitzador">      
+        </select>
+      </td>
+      <td>
+        <!-- <input type="button" id="botoAfegirNovaActivitat" value="afegir" class="ui-icon ui-icon-check"/> -->
+        <button id="botoAfegirNovaActivitat" class="ui-button ui-corner-all ui-widget"><span class="ui-icon ui-icon-check green"></span></button>
+      </td>
+      </form>
+    </tr>
+  </tbody>
+</table> 
+
+
+
+  <div id="filtre">
+    <div id="filtreData">
+      <label>Data:</label>
+      <input type="text"  name="date" id="seleccioData"/>       
+    </div>
+    <div id="filtreModalitat">
+      <label>Modalitat:</label>
+      <select id="modalitatSeleccionada">      
+        <option value="%">Totes</option>
+        <option value="TAC">TAC</option>
+        <option value="RMN oberta">RMN oberta</option>
+        <option value="RMN tancada">RMN tancada</option>
+      </select>
+    </div>
+  </div>
+
+
+<!-- Llistat dels registres d'activitat RMN del dia -->
+<table id="taula_registresLLibre" class="body_taula">
+<caption>
+  <!-- formulari per canviar el dia -->
+</caption>
+
+<thead>
+  <tr>
+    <th>Data</th>
+    <th>Procedencia</th>
+    <th>Pacient</th>
+    <th>Proces</th>
+    <th>Prova</th>
+    <th>Modalitat</th>
+    <th>Contrast</th>
+    <th>Realitzador</th>
+    <th></th>
+  </tr>
+</thead>
+  <tbody>
+  </tbody>
+</table>
+
+<div id="total">
+  <label>Total: </label>
+  <span></span>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- ================================= TECNICS ================================= -->
+<!-- javascripts propis de la pagina-->
+<script src="/javascripts/tecnics.js"></script>
+
+
+<!-- estils propis de la pagina-->
+<link rel='stylesheet' href='/stylesheets/tecnics.css' />
+
+
+<div id="dialogTecnics" title="Tecnics">
+
+    <!--Formulari per introduir NOU registre -->
+
+    <table id="taulaAfegirRegistreTecnic">
+    <caption>Nou tecnic</caption>
+    <thead>
+      <tr>
+        <th>Numero</th>
+        <th>Nom</th>
+        <th></th>
+      </tr>
+    </thead>
+      <tbody>
+        <tr>
+          <form id="formulariAfegirTecnic" autocomplete="off"> 
+          <td><input type="text" id="numero" ></td>
+          <td><input type="text" id="nom" /></td>
+          <td>
+            <button id="botoAfegirNouTecnic" class="ui-button ui-corner-all ui-widget"><span class="ui-icon ui-icon-check green"></span></button>
+          </td>
+          </form>
+        </tr>
+      </tbody>
+    </table> 
+
+
+
+    <!-- Llistat de tecnics -->
+    <table id="taula_registresTECNICS" class="body_taula">
+    <caption>
+      <label>Llistat de tecnics</label>
+    </caption>
+
+    <thead>
+      <tr>
+        <th>Numero</th>
+        <th>Nom</th>
+        <th></th>
+      </tr>
+    </thead>
+      <tbody>
+      </tbody>
+    </table>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- ================================= PROVES =================================== -->
+
+<!-- javascripts propis de la pagina-->
+<script src="/javascripts/proves.js"></script>
+
+
+<!-- estils propis de la pagina-->
+<link rel='stylesheet' href='/stylesheets/proves.css' />
+
+
+<div id="dialogProves" title="Proves">
+
+    <!--Formulari per introduir NOU registre -->
+    <table id="taulaAfegirRegistreProva">
+    <caption>Nova prova</caption>
+    <thead>
+      <tr>
+        <th>Prova</th>
+        <th></th>
+      </tr>
+    </thead>
+      <tbody>
+        <tr>
+          <form id="formulariAfegirProva" autocomplete="off">     
+          <td><input type="text" id="prova2"/></td>
+          <td>
+            <button id="botoAfegirNovaProva" class="ui-button ui-corner-all ui-widget"><span class="ui-icon ui-icon-check green"></span></button>
+          </td>
+          </form>
+        </tr>
+      </tbody>
+    </table> 
+
+
+
+    <!-- Llistat de tecnics -->
+    <table id="taula_registresPROVES" class="body_taula">
+    <caption>
+      <label>Proves RMN</label>
+    </caption>
+
+    <thead>
+      <tr>
+        <th>Prova</th>
+        <th></th>
+      </tr>
+    </thead>
+      <tbody>
+      </tbody>
+    </table>
+</div>

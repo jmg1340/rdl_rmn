@@ -1,0 +1,68 @@
+
+#filtre{
+	display: inline-block;
+	margin-top: 40px;
+}
+
+#filtreAnys{
+	display: inline;
+	float: left;
+
+}
+
+#anys{
+	width: 65px;
+	text-align: center;
+	background-color: #6f6;
+}
+
+#filtreModalitat{
+	display: inline;
+	margin-left: 20px;
+}
+
+#modalitatSeleccionada{
+	width: 155px;
+	text-align: left;
+	background-color: #6f6;
+}
+
+
+
+
+
+
+
+/* TAULA resultats*/
+
+#taula_resultats{
+	margin-top: 30px;
+	width: 100%;
+}
+
+
+#taula_resultats th {	/* mesos */
+	width: 3%;
+	text-align: center;
+}
+
+#taula_resultats th:first-child {   	/* proves */
+	width: 8%;
+	text-align: left;
+}
+
+
+#taula_resultats td {	/* mesos */
+	text-align: center;
+}
+
+#taula_resultats td:first-child {   	/* proves */
+	text-align: left;
+}
+
+
+
+.total{
+	color: #ffe066;
+	font-weight: bold;
+}

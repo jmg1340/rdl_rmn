@@ -1,0 +1,79 @@
+
+
+
+/*  colors icones jquery ui */
+
+.ui-icon.red { background-image: url(../javascripts/jquery-ui-1.11.4/images/ui-icons_8c291d_256x240.png); }
+.ui-icon.green { background-image: url(../javascripts/jquery-ui-1.11.4/images/ui-icons-green.png); }
+
+
+
+
+
+/* TAULA introduccio registre tecnic*/
+
+#taulaAfegirRegistreTecnic{
+	text-align: center;
+	table-layout: fixed;
+	margin-top: 5px;
+	width: 80%;
+	margin: 10px auto 0px auto;
+}
+
+#taulaAfegirRegistreTecnic th:nth-child(1){   	/*numero*/
+	width: 10%;
+}
+
+#taulaAfegirRegistreTecnic th:nth-child(2) {		/* nom */
+	width: 30%;
+}
+
+#taulaAfegirRegistreTecnic th:nth-child(3) {		/* boto validar */
+	width: 3%;
+}
+
+#taulaAfegirRegistreTecnic td:nth-child(3) {		/* boto validar */
+	text-align: center;
+}
+
+
+#taulaAfegirRegistreTecnic input {
+	/*width: 95%;*/
+	background-color: #ffe066;
+	width: 95%;
+}
+
+
+
+
+
+/* TAULA llistat registres tecnics*/
+
+#taula_registresTECNICS{
+	margin: 20px auto 0px auto;
+	width: 80%;
+
+}
+
+  
+#taula_registresTECNICS th:first-child {   		/*numero*/
+	width: 3%;
+}
+
+
+#taula_registresTECNICS th:nth-child(2), {	/* nom */
+	width: 30%;
+}
+
+
+#taula_registresTECNICS th:last-child {   	/* boto eliminar */
+	width: 3%;
+}
+/* numero
+#taula_registresTECNICS td:first-child {   	
+	text-align: center;
+}
+*/
+#taula_registresTECNICS td:last-child {   	/* boto eliminar */
+	text-align: center;
+}
